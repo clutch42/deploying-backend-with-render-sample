@@ -21,7 +21,7 @@ async function getRandomActivity() {
       const data = await response.json();
       return data.activity;
     } else {
-      return { activity: "jump" };
+      return {"status":"success","message":"Activity \"Pot some plants and put them around your house\" inserted successfully"};
     }
   } catch (error) {
     return null;
