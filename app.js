@@ -21,7 +21,7 @@ async function getRandomActivity() {
       const data = await response.json();
       return data.activity;
     } else {
-      return {"this should be a random activity but the api for the provided site doesn't work"};
+      return { activity:"this should be a random activity but the api for the provided site doesn't work"};
     }
   } catch (error) {
     return null;
